@@ -8,14 +8,16 @@ import pro.sky.springExeptions.Interface.RegistrationService;
 @RestController
 public class RegistrationController {
     private final RegistrationService registrationService;
-    public RegistrationController (RegistrationService registrationService) {
+    public RegistrationController(RegistrationService registrationService) {
         this.registrationService = registrationService;
     }
 
     @GetMapping(path = "/registration")
-    public String registration (@RequestParam("login") String login,
+    public String registration(@RequestParam("login") String login,
                                @RequestParam("password") String password,
                                @RequestParam("confirmPassword") String confirmPassword) {
-
+        try {
+            return registrationService.registration(login, password, confirmPassword);
+        } catch ()
     }
 }
