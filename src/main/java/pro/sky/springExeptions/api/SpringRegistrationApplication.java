@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringExceptionsApplication {
+public class SpringRegistrationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringExceptionsApplication.class, args);
+		SpringApplication.run(SpringRegistrationApplication.class, args);
 	}
 // 1. Напишите статический метод, который принимает на вход три параметра: login, password и confirmPassword.
 // 2. Параметр Login содержит в себе только латинские буквы, цифры и знак подчеркивания.
@@ -26,15 +26,15 @@ public class SpringExceptionsApplication {
 //	Нужно задать строку/массив разрешенных символов, и, используя проверку в цикле, определить, содержит ли проверяемая строка неразрешенные символы.
 
 //		- Подсказка 2
-//			try {//Блок кода,в котором должны отслеживаться ошибки
-//	 		}catch (тип_исключения_1 объект_исключения) {
-//				//Обработка исключения тип_исключения_1// }
+//	try {//Блок кода,в котором должны отслеживаться ошибки
+//	}catch (тип_исключения_1 объект_исключения) {
+//		//Обработка исключения тип_исключения_1// }
 //
-//			catch (тип_исключения_2 объект_исключения) {
-//				//Обработка исключения тип_исключения_2
-//			}
-//			// ...
-//			finally
-//				//блок кода,который должен быть непременно выполнен по завершении блока try
+//	catch (тип_исключения_2 объект_исключения) {
+//		//Обработка исключения тип_исключения_2
+//	}
+//	//...
+//	finally
+//		//блок кода,который должен быть непременно выполнен по завершении блока try
 //			}
 }
